@@ -1,0 +1,8 @@
+<div class="grid-container">
+  <h1>From Member: {{ count }}</h1>
+  <!-- async pipe will subscribe and observe the value -->
+  <h1>From Observable: {{ countObs$ | async }}</h1>
+  <h1>From Observable2: {{ countObs2$ | async }}</h1>
+  <button type="button" (click)="pressed()">Get Random Number</button>
+  <h2>Log (using subscribe): {{ log }}</h2>
+</div>
